@@ -2,7 +2,7 @@
 // A flat, unblocked 64-bit carry-lookahead adder: every carry is computed
 // directly (two-level, no rippling), exactly like cla4.v, just scaled to
 // 64 bits. Add delays throughout (same convention as cla4.v) so it can be
-// fairly compared against rca64.v and cla64_blocked.v.
+// fairly compared against rca64.v and cla64_blocked.
 
 module cla64_flat(
   input  [63:0] a,

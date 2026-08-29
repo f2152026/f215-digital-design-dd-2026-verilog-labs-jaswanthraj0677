@@ -3,7 +3,7 @@
 // leaving it uncommented, with the other two commented out. Compile and
 // run tb.v, then switch to a different implementation and repeat -- this
 // lets you compare rca64.v, cla64_flat.v, and cla64_blocked.v using the
-// exact same testbench and stimulus each time.
+// exact same testbench and stimulus each tim
 
 module dut(
   input  [63:0] a,
