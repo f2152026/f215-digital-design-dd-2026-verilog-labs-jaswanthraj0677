@@ -5,7 +5,7 @@
 // Part (a): leave this file exactly as it is, compile, and simulate.
 // Part (b): AFTER completing part (a), come back and reorder the five gate
 //           instantiations below into any different sequence, then
-//           re-simulate with the same tb.v and compare.
+//           re-simulate with the same tb.v and compare
 
 module FA_Gate(
   input  a,
@@ -16,10 +16,10 @@ module FA_Gate(
 );
   wire ps, pc1, pc2;
 
-  xor (ps,  a,   b);
-  and (pc1, a,   b);
-  xor (sum, cin, ps);
-  and (pc2, cin, ps);
-  or  (cout, pc1, pc2);
+or (count,pc1,pc2);
+and (pc2,cin,ps);
+xor (sum,cin,ps);
+and (pc1,a,b);
+xor (ps,a,b);
 
 endmodule
